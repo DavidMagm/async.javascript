@@ -1,0 +1,12 @@
+{
+  "name": "async.javascript",
+  "version": "1.0.0",
+  "description": "proyecto del curso de asincronismo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
