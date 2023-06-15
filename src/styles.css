@@ -1,0 +1,21 @@
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+}
+
+.list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 25vh;
+}
+
+.list li {
+    list-style: none;
+}
