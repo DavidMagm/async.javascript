@@ -5,9 +5,20 @@ body {
 }
 
 header {
+    display: flex;
     width: 100%;
 }
 
+header img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    nav-index: 1;
+}
+
+.list {
+    width: 100%;
+}
 .list ul {
     display: flex;
     flex-direction: row;
@@ -18,4 +29,15 @@ header {
 
 .list li {
     list-style: none;
+}
+
+main .principal {
+    margin-top: 20px;
+    width: 100%;
+    text-align: start;
+}
+
+.principal .tittle {
+    padding: 20px auto;
+
 }
