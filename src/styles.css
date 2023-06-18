@@ -6,14 +6,19 @@ body {
 
 header {
     display: flex;
+    position: relative;
     width: 100%;
 }
 
 header img {
-    width: 500px;
+    width: 400px;
     height: 500px;
+    position: absolute;
+    right: 30px;
     object-fit: cover;
-    nav-index: 1;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 50px;
+    z-index: 1;
 }
 
 .list {
@@ -22,15 +27,35 @@ header img {
 .list ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 50%;
-    height: 25vh;
+    height: 6vh;
+    border-bottom: solid 2px #070;
 }
 
 .list li {
+    margin: 10px auto;
+    /* padding: 8px 8px; */
     list-style: none;
+    font-size: 14px;
+    border: solid 1px #070;
+    border-radius: 2px;
 }
 
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #070;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+main {
+    margin-top: 50px;
+}
 main .principal {
     margin-top: 20px;
     width: 100%;
@@ -40,4 +65,20 @@ main .principal {
 .principal .tittle {
     padding: 20px auto;
 
+}
+.principal .container {
+    width: 100%;
+    height: 200px;
+}
+
+main .video {
+    width: 100%;
+    height: 200px;
+}
+
+footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
