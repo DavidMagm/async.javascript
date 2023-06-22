@@ -1,4 +1,6 @@
-const url = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCBG3pvXhocK7_GjeIx2sUeg&part=snippet%2Cid&order=date&maxResults=10';
+const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCBG3pvXhocK7_GjeIx2sUeg&part=snippet%2Cid&order=date&maxResults=10';
+
+const content = null || document.getElementById('video-content');
 const options = {
 	method: 'GET',
 	headers: {
@@ -23,15 +25,15 @@ async function fetchData(urlApi) {
           class="w-full">
           <img src="${video.snippet.thumbnails.high.url}" alt="${video.snippet.description}">
         </div>
-        <div class="tittle-video">
+        <div class="title-video">
           <h3>
             <span></span>
             ${video.snippet.title}
           </h3>
         </div>
       </div>
-        `).slice(0, 8).join('')}`;
-        content.innerHYML = view;
+        `).slice(0, 4).join('')}`;
+        content.innerHTML = view;
     }
     catch (error) {
         console.log(error);
