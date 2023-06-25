@@ -2,6 +2,7 @@
 body {
     box-sizing: border-box;
     margin: 0;
+    font-family: Belanosima;
 }
 
 header {
@@ -11,8 +12,8 @@ header {
 }
 
 header img {
-    width: 400px;
-    height: 500px;
+    width: 480px;
+    height: 480px;
     position: absolute;
     right: 30px;
     object-fit: cover;
@@ -30,6 +31,7 @@ header img {
     justify-content: space-around;
     width: 50%;
     height: 6vh;
+    font-weight: bold;
     border-bottom: solid 2px #070;
 }
 
@@ -38,8 +40,13 @@ header img {
     /* padding: 8px 8px; */
     list-style: none;
     font-size: 14px;
-    border: solid 1px #070;
-    border-radius: 2px;
+    /* border: solid 1px #070;
+    border-radius: 2px; */
+}
+
+.list li:hover {
+    color: #070;
+    cursor: pointer;
 }
 
 h1 {
@@ -50,6 +57,7 @@ h1 {
 }
 
 h2 {
+    margin-top: 0;
     font-size: 28px;
 }
 
@@ -59,19 +67,22 @@ main {
 main .principal {
     margin-top: 20px;
     width: 100%;
-    text-align: start;
 }
 
 .principal .tittle {
+    width: 50%;
+    text-align: center;
     padding: 20px auto;
 
 }
 .principal .container {
-    width: 100%;
+    width: 50%;
     height: 200px;
+    text-align: center;
 }
 
 #video-content {
+    margin-top: 36px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(335px, 1fr));
